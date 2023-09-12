@@ -1,0 +1,44 @@
+.care {
+    padding-bottom: 149px;
+
+    &__line {
+        align-items: center;
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        letter-spacing: 3.2px;
+    }
+
+    &__title {
+        font-size: 37px;
+        padding-bottom: 18px;
+    }
+
+    p {
+        color: #170C04;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.6;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .care {
+        padding-bottom: 100px;
+
+        &__line {
+            text-align: center;
+
+            img {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

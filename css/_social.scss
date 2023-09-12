@@ -1,0 +1,26 @@
+.social {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+        &:not(:last-child) {
+            padding-right: 25px;
+        }
+    }
+
+    a {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: rgba(223, 223, 223, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover path {
+            fill: #E27B3A;
+        }
+    }
+}

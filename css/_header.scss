@@ -1,0 +1,128 @@
+.header {
+    padding-top: 38px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+
+    &__nav {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        gap: 55px;
+
+        a {
+            text-decoration: none;
+            color: #170C04;
+            font-size: 16px;
+            line-height: 19px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__mobile-btn {
+        display: none;
+    }
+
+    &__search {
+        cursor: pointer;
+        background-image: url(../image/search.svg);
+        background-color: transparent;
+        border: none;
+        width: 19px;
+        height: 19px;
+        transition-duration: 300ms;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+    }
+
+    &__cart {
+        background-image: url(../image/cart.svg);
+        width: 21px;
+        height: 20px;
+        text-decoration: none;
+        margin-left: 40px;
+        transition-duration: 300ms;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        position: relative;
+
+        &__mobile-btn {
+            cursor: pointer;
+            display: block;
+            background-image: url(../image/menu-open.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 36px;
+            height: 36px;
+            border: none;
+            margin-left: 40px;
+            background-color: rgb(252, 242, 235);
+
+            &_active {
+                background-image: url(../image/menu-close.svg);
+            }
+        }
+
+        &__logo {
+            margin-right: auto;
+        }
+
+        &__menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 72px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+
+            &_open {
+                display: block;
+            }
+
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 15px;
+                }
+            }
+
+            a {
+                display: block;
+                background-color: rgb(226, 123, 58, 0.15);
+                padding: 10px 15px;
+                border-radius: 6px;
+            }
+
+
+
+        }
+
+        &__nav {
+            order: 1;
+            margin: 0;
+        }
+    }
+}

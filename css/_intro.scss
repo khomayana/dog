@@ -1,0 +1,51 @@
+.intro {
+    &__line {
+        align-items: center;
+    }
+
+    h1 {
+        color: #170C04;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.5em;
+        padding-bottom: 47px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .intro {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &__buttons {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        h1 {
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+}

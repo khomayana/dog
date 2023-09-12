@@ -1,0 +1,32 @@
+.subscribe {
+    text-align: center;
+    padding-bottom: 130px;
+
+    &__title {
+        margin: 0 auto;
+        max-width: 400px;
+        padding-bottom: 36px;
+    }
+
+    &__item {
+        padding-bottom: 46px;
+
+
+        h4 {
+            color: #170C04;
+            // text-align: center;
+            font-size: 23px;
+            line-height: 28px;
+            padding: 50px 0 22px;
+        }
+
+        p {
+            color: #170C04;
+            // text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            opacity: 0.6;
+            padding-bottom: 15px;
+        }
+    }
+}
